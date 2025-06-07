@@ -1,7 +1,14 @@
 # Jonas Silva - Portfolio Hub
 
 <div align="center">
-  <img src="public/jonas-banner.jpg" alt="Jonas Silva - Desenvolvedor Full Stack" width="100%" style="border-radius: 10px; margin-bottom: 20px;">
+
+# Olá, eu sou **Jonas Silva** 👋
+
+### Desenvolvedor Full Stack especializado em criar soluções inovadoras com foco em performance e experiência do usuário
+
+[<img src="https://img.shields.io/badge/-Ver%20Projetos-3ad07b?style=for-the-badge&logo=github&logoColor=white" />](#projetos)
+[<img src="https://img.shields.io/badge/-Entrar%20em%20Contato-1e3a5f?style=for-the-badge&logo=mail&logoColor=white" />](#contato)
+
 </div>
 
 ## 📋 Descrição
@@ -40,7 +47,7 @@ O diferencial deste portfolio é a integração com a API do GitHub, que exibe a
 - **GitHub API** - Integração para exibir repositórios dinâmicos
 - **Responsive Design** - Layout adaptável para todos os dispositivos
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades <a name="projetos"></a>
 
 - **Exibição de Projetos** - Integração com a API do GitHub para mostrar projetos específicos ou mais recentes
 - **Design Responsivo** - Experiência perfeita em dispositivos móveis, tablets e desktops
@@ -86,7 +93,7 @@ Este projeto foi desenvolvido com foco em performance, utilizando:
 - **Carregamento eficiente** - Lazy loading para componentes e imagens
 - **Bundle otimizado** - Splitting de código para carregar apenas o necessário
 
-## 👨‍💻 Desenvolvedor
+## 👨‍💻 Desenvolvedor <a name="contato"></a>
 
 **Jonas Silva**  
 Desenvolvedor Full Stack com experiência em React, TypeScript, Node.js e tecnologias cloud.
