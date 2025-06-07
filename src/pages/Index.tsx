@@ -44,25 +44,40 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-emerald-950 to-gray-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-800/20 to-green-800/20" />
-        <div className="container mx-auto px-4 py-20 relative">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+        <div className="container mx-auto px-4 relative">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            {/* Foto em destaque - agora vem primeiro no mobile */}
+            <div className="flex-1 flex justify-center lg:justify-start order-1 lg:order-2">
+              <div className="relative group">
+                <div className="absolute -inset-6 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse" />
+                <div className="absolute -inset-3 bg-gradient-to-r from-emerald-700 to-green-700 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
+                <img
+                  src="/lovable-uploads/651ea45a-792c-457c-b438-dfa0fc8cc76d.png"
+                  alt="Jonas Silva"
+                  className="relative w-96 h-96 lg:w-[450px] lg:h-[450px] rounded-full object-cover border-4 border-emerald-400/30 shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:border-emerald-400/50"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-t from-emerald-900/20 to-transparent" />
+              </div>
+            </div>
+            
+            {/* Conteúdo textual */}
+            <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
                 Olá, eu sou{" "}
-                <span className="bg-gradient-to-r from-emerald-500 to-green-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">
                   Jonas Silva
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in">
+              <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in leading-relaxed">
                 Desenvolvedor Full Stack especializado em criar soluções inovadoras 
                 com foco em performance e experiência do usuário
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-emerald-800 to-green-800 hover:from-emerald-900 hover:to-green-900 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+                  className="bg-gradient-to-r from-emerald-700 to-green-700 hover:from-emerald-800 hover:to-green-800 text-white px-8 py-4 text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-emerald-500/25"
                 >
                   <Code className="w-5 h-5 mr-2" />
                   Ver Projetos
@@ -70,21 +85,11 @@ const Index = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+                  className="border-2 border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white px-8 py-4 text-lg transition-all duration-300 hover:scale-105 bg-transparent"
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   Entrar em Contato
                 </Button>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center lg:justify-end">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-emerald-800 to-green-800 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
-                <img
-                  src="/lovable-uploads/651ea45a-792c-457c-b438-dfa0fc8cc76d.png"
-                  alt="Jonas Silva"
-                  className="relative w-80 h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl transition-transform duration-300 group-hover:scale-105"
-                />
               </div>
             </div>
           </div>
