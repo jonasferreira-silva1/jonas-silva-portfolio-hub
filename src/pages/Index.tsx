@@ -6,18 +6,18 @@ import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   const technologies = [
-    { name: "TypeScript", color: "bg-emerald-600" },
-    { name: "React", color: "bg-green-500" },
+    { name: "TypeScript", color: "bg-emerald-800" },
+    { name: "React", color: "bg-green-700" },
     { name: "Next.js", color: "bg-gray-800" },
-    { name: "Node.js", color: "bg-emerald-700" },
-    { name: "PostgreSQL", color: "bg-teal-600" },
-    { name: "MongoDB", color: "bg-green-600" },
-    { name: "Docker", color: "bg-emerald-500" },
-    { name: "AWS", color: "bg-orange-500" },
-    { name: "JavaScript", color: "bg-lime-500" },
-    { name: "Python", color: "bg-teal-700" },
-    { name: "CSS3", color: "bg-emerald-600" },
-    { name: "HTML5", color: "bg-orange-600" }
+    { name: "Node.js", color: "bg-emerald-900" },
+    { name: "PostgreSQL", color: "bg-teal-800" },
+    { name: "MongoDB", color: "bg-green-800" },
+    { name: "Docker", color: "bg-emerald-700" },
+    { name: "AWS", color: "bg-orange-600" },
+    { name: "JavaScript", color: "bg-lime-700" },
+    { name: "Python", color: "bg-teal-900" },
+    { name: "CSS3", color: "bg-emerald-800" },
+    { name: "HTML5", color: "bg-orange-700" }
   ];
 
   const projects = [
@@ -42,16 +42,16 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-emerald-900 to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-emerald-950 to-gray-900">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-green-600/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-800/20 to-green-800/20" />
         <div className="container mx-auto px-4 py-20 relative">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
                 Olá, eu sou{" "}
-                <span className="bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-emerald-500 to-green-600 bg-clip-text text-transparent">
                   Jonas Silva
                 </span>
               </h1>
@@ -62,7 +62,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+                  className="bg-gradient-to-r from-emerald-800 to-green-800 hover:from-emerald-900 hover:to-green-900 text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
                 >
                   <Code className="w-5 h-5 mr-2" />
                   Ver Projetos
@@ -70,7 +70,7 @@ const Index = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
+                  className="border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white px-8 py-3 text-lg transition-all duration-300 hover:scale-105"
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   Entrar em Contato
@@ -79,7 +79,7 @@ const Index = () => {
             </div>
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
+                <div className="absolute -inset-4 bg-gradient-to-r from-emerald-800 to-green-800 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
                 <img
                   src="/lovable-uploads/651ea45a-792c-457c-b438-dfa0fc8cc76d.png"
                   alt="Jonas Silva"
@@ -143,11 +143,11 @@ const Index = () => {
             {projects.map((project, index) => (
               <Card 
                 key={project.title} 
-                className="bg-slate-900/80 border-slate-700 hover:border-emerald-500/50 transition-all duration-300 hover:scale-105 group"
+                className="bg-slate-900/80 border-slate-700 hover:border-emerald-600/50 transition-all duration-300 hover:scale-105 group"
               >
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="p-2 bg-emerald-600/20 rounded-lg text-emerald-400 group-hover:bg-emerald-600/30 transition-colors">
+                    <div className="p-2 bg-emerald-800/20 rounded-lg text-emerald-500 group-hover:bg-emerald-800/30 transition-colors">
                       {project.icon}
                     </div>
                     <CardTitle className="text-white text-xl">{project.title}</CardTitle>
@@ -199,14 +199,14 @@ const Index = () => {
               href="https://www.linkedin.com/in/jonas-silva-699538230/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105"
+              className="flex items-center gap-3 bg-emerald-800 hover:bg-emerald-900 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105"
             >
               <Linkedin className="w-5 h-5" />
               LinkedIn
             </a>
             <a
               href="mailto:jonas.fsilva1@hotmail.com"
-              className="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105"
+              className="flex items-center gap-3 bg-green-800 hover:bg-green-900 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105"
             >
               <Mail className="w-5 h-5" />
               Email
