@@ -108,4 +108,5 @@ Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais deta
 
 ---
 
-Desenvolvido com ❤️ por Jonas Silva
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/26973be3-12b6-4675-9277-8dfa1f816862" />
+
